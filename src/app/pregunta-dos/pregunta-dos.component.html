@@ -1,1 +1,20 @@
-<p>pregunta-dos works!</p>
+<table class="tabla-api">
+    <tr>
+      <th>albumId</th>
+      <th>id</th>
+      <th>Title</th>
+      <th>Url</th>
+      <th>ThumbnailUrl</th>
+    </tr>
+    @for (item of listaImagenes; track $index) {
+      @if (item.title.startsWith("a") || item.title.startsWith("r") || item.title.startsWith("s") ){
+        <tr>
+          <td>{{item.albumId}}</td>
+          <td>{{item.id}}</td>
+          <td>{{item.title}}</td>
+          <td>{{item.url}}</td>
+          <td>{{item.thumbnailUrl}}</td>
+        </tr>
+      } 
+    }  
+  </table>

@@ -18,4 +18,10 @@ export class ApiRestService {
     return this.httpClient.get(this.apiRick).pipe(result=>result);
   }
 
+  getImageAll():Observable<any>{
+    return this.httpClient.get(this.apiPhoto).pipe(result=>result);
+  }
+
+
+
 }
