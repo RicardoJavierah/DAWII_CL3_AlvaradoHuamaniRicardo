@@ -5,6 +5,7 @@
       <th>Title</th>
       <th>Url</th>
       <th>ThumbnailUrl</th>
+      <th>Img-foto</th>
     </tr>
     @for (item of listaImagenes; track $index) {
       @if (item.title.startsWith("a") || item.title.startsWith("r") || item.title.startsWith("s") ){
@@ -14,6 +15,7 @@
           <td>{{item.title}}</td>
           <td>{{item.url}}</td>
           <td>{{item.thumbnailUrl}}</td>
+          <td><img src={{item.url}}></td>
         </tr>
       } 
     }  

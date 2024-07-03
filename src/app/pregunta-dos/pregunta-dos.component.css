@@ -11,4 +11,8 @@ td, th {
 th {
     background-color: #48b5f0;
     color: black; 
-  }
+}
+img{
+    width: 20px;
+    height: 20px;
+}
