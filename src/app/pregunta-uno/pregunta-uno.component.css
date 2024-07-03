@@ -1,4 +1,14 @@
-table{
+.tabla-api{
+    border-collapse: separate;
     width: 100%;
-    height: auto;
+    border: 1px solid black;
 }
+td, th {
+    border: 1px solid #ddd; 
+    padding: 8px; 
+    text-align: left; 
+}
+th {
+    background-color: #48b5f0;
+    color: black; 
+  }

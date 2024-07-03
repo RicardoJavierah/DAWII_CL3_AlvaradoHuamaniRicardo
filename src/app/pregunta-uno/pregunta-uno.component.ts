@@ -23,7 +23,7 @@ export class PreguntaUnoComponent {
   getEpisodios(){
     this.api.getEpisodiosAll().subscribe({
       next:(episodios)=>{
-        this.listaEpisodio = episodios
+        this.listaEpisodio = episodios.results
       },
       error:(error)=>{
         console.log(error);
